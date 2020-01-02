@@ -15,7 +15,8 @@ CSV.foreach('./db/csv/bird-data.csv', headers: true) do |row|
    new_bird = Bird.find_or_create_by(
        tag: row["tag-local-identifier"],
        name: row["species-generic-name"],
-       species: row["individual-taxon-canonical-name"]
+       species: row["individual-taxon-canonical-name"],
+       on_map: false
     )
     new_bird.locations.create(
         date: row["date"],

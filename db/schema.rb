@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_12_30_201200) do
+ActiveRecord::Schema.define(version: 2020_01_02_184418) do
 
   create_table "birds", force: :cascade do |t|
     t.string "tag"
@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(version: 2019_12_30_201200) do
     t.string "species"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.boolean "on_map"
   end
 
   create_table "locations", force: :cascade do |t|
