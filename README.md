@@ -1,24 +1,41 @@
-# README
+## Welcome to Migration Mapper!
+**This app encourages kids to practice writing numbers and counting. Write and Count uses a pre-trained model that extracts features of an image to classify it according to the model.**
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Created by Stacey Zander.
 
-Things you may want to cover:
+![background](/1.png)
 
-* Ruby version
+![background](/2.png)
+  
+**Demo:**
 
-* System dependencies
+https://www.youtube.com/watch?v=cQpGNGBwHVY&feature=youtu.be
 
-* Configuration
+**Stack:**
 
-* Database creation
+Ruby/Rails
+JavaScript
+React
 
-* Database initialization
+**Other Tech:**
 
-* How to run the test suite
+Leaflet
+MoveBank database (for bird location data)
 
-* Services (job queues, cache servers, search engines, etc.)
+**Install Instructions:**
+(This is a deployed app, but if you would like to run it locally, follow these instructions.)
 
-* Deployment instructions
+1. Have current versions of Ruby and Rails installed. Fork and clone this repo.
 
-* ...
+2. Install Ruby gems by running the command 'bundle install'.
+
+3. Run the command 'rails db:migrate' to set up your database.
+
+4. If you want to add your own data, replace the csv file in db/csv with a csv file that contains your own data (name it bird-data.csv). Be sure that you have header columns that match the ones in the current csv file.
+
+5. Run the command 'rails db:seed' to fill the tables with data.
+
+6. Run the command 'rails s'.
+
+6. Follow the instructions on this repo to run the frontend: https://github.com/slzander/migration-app-frontend
+
