@@ -13,14 +13,17 @@ https://www.youtube.com/watch?v=cQpGNGBwHVY&feature=youtu.be
 
 **Stack:**
 
-Ruby/Rails
-JavaScript
-React
+  * Ruby/Rails
+
+  * JavaScript
+
+  * React
 
 **Other Tech:**
 
-Leaflet
-MoveBank database (for bird location data)
+  * Leaflet
+
+  * MoveBank database (for bird location data)
 
 **Install Instructions:**
 (This is a deployed app, but if you would like to run it locally, follow these instructions.)
