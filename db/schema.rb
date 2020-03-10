@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 2020_01_02_184418) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "birds", force: :cascade do |t|
     t.string "tag"
     t.string "name"
@@ -25,7 +28,7 @@ ActiveRecord::Schema.define(version: 2020_01_02_184418) do
     t.date "date"
     t.float "latitude"
     t.float "longitude"
-    t.integer "bird_id", null: false
+    t.bigint "bird_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["bird_id"], name: "index_locations_on_bird_id"
