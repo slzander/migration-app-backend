@@ -5,14 +5,14 @@ class BirdsController < ApplicationController
     end
 
     def update
-        puts request.referrer
-        puts 'READ THIS ^!!!!!!!!!!!!!!!!!!'
-        mappedBirds = params[:mappedBirds]
-        Bird.all.map do |bird|
-            if mappedBirds.include?(bird.id)
-               bird.update(on_map: true)
-            else
-                bird.update(on_map: false)
+        if params[:id] == "1"
+            mappedBirds = params[:mappedBirds]
+            Bird.all.map do |bird|
+                if mappedBirds.include?(bird.id)
+                bird.update(on_map: true)
+                else
+                    bird.update(on_map: false)
+                end
             end
         end
     end
