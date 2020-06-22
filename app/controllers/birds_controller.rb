@@ -5,6 +5,8 @@ class BirdsController < ApplicationController
     end
 
     def update
+        puts request.referrer
+        puts 'READ THIS ^!!!!!!!!!!!!!!!!!!'
         mappedBirds = params[:mappedBirds]
         Bird.all.map do |bird|
             if mappedBirds.include?(bird.id)
